@@ -27,7 +27,7 @@
 <style>
 body {
     font-family: 'Comfortaa';font-size: 20px;
-    cursor: "Normal-Selects.png", auto;
+    cursor: none;
 }
   .button {
   background-color: blue;
@@ -42,7 +42,7 @@ body {
   cursor: pointer
 }
   .custom {
-  cursor: url(Normal-Selects.png), auto;
+  cursor: url(https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Ff1%2FHeart_coraz%25C3%25B3n.svg%2F1200px-Heart_coraz%25C3%25B3n.svg.png&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHeart_symbol&tbnid=mwrc-M2roMQrnM&vet=12ahUKEwiMvqLDgejwAhUHm54KHWrWBcEQMygBegUIARDWAQ..i&docid=ylLv9qqf4uZs3M&w=1200&h=1200&itg=1&q=heart&safe=active&ved=2ahUKEwiMvqLDgejwAhUHm54KHWrWBcEQMygBegUIARDWAQ), auto;
 }
 </style>
 </head>
@@ -54,4 +54,16 @@ body {
 </p>
 <a href="steal_the_hat_multiplayer_test_zip.zip" class="button" download>download for windows</a>
 </body>
+<canvas id="myCanvas" width="240" height="297"
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  var e = window.event;
+  function mouseUpdate()
+  {
+    var MousePosX = e.clientX;
+    var MousePosY = e.clientY;
+    //ctx.drawImage(Normal-Selects.png, MousePosX, MousePosY);
+  }
+</script>
 </html>
