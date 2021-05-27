@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 THIS IS A TEST! DOES THIS WORK?????
 <body>
-<input type="check">
+<input type="checkbox"; id = "textdemo">
 <button onclick = "myFunction()"> Submit</button>
 <p id = "demo"></p>
 <body>
 <script>
   function myFunction()
   {
-    document.getElementById("demo").innerHTML = "Yay!";
+    var x = document.getElementById("textdemo").value;
+    document.getElementById("demo").innerHTML = x;
   }
 </script>
