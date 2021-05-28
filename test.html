@@ -8,7 +8,10 @@ THIS IS A TEST! DOES THIS WORK?????
 <script>
   function myFunction()
   {
-    var x = document.getElementById("textdemo").value;
-    document.getElementById("demo").innerHTML = x;
+   if(document.getElementById("textdemo").value == "on")
+   {
+     document.getElementById("demo").innerHTML = "Yay!";
+   }
+    
   }
 </script>
