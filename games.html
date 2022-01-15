@@ -49,14 +49,17 @@ body {
 </html>
 <script>
   var detectedOS = "Unknown OS";
+  var vroomDict = {
+      Windows : "https://github.com/Titanicspike/Titanicspike.github.io/raw/main/Vroom/vroomInstaller (v1.3.6).exe",
+      Mac : "";
+      
 
 if (navigator.appVersion.indexOf("Mac") != -1) 
     detectedOS = "MacOS";
 
 if (navigator.appVersion.indexOf("Win") != -1) 
     detectedOS = "Windows";
-
-if (navigator.appVersion.indexOf("Linux") != -1) 
-    detectedOS = "Linux";
-document.getElementById("id01").innerHTML = "download Vroom for " + detectedOS; 
+    
+document.getElementById("id01").innerHTML = "download Vroom for " + detectedOS + " (v1.3.6)"; 
+document.getElementById("id01").href = vroomDict[detectedOS]; 
 </script>
