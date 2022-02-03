@@ -59,6 +59,8 @@ if (navigator.appVersion.indexOf("Mac") != -1)
 
 if (navigator.appVersion.indexOf("Win") != -1) 
     detectedOS = "Windows";
+if (navigator.appVersion.indexOf("Linux") != -1) 
+    detectedOS = "Linux";
     
 document.getElementById("id01").innerHTML = "download Vroom for " + detectedOS + " (v1.3.6)"; 
 document.getElementById("id01").href = vroomDict[detectedOS]; 
