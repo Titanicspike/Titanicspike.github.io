@@ -50,8 +50,8 @@ body {
 <script>
   var detectedOS = "Unknown OS";
   var vroomDict = {
-      Windows : "https://app.box.com/file/921335457023?s=67s260mq7mv0vb73fsg8uz08ofibrbjz&sb=/details",
-      MacOS : "https://app.box.com/file/921336074658?sb=/details",
+      Windows : "https://drive.google.com/uc?export=download&id=1DeA8UbXLFemyn6Sb6aqxGsdhN33_M3jR",
+      MacOS : "https://drive.google.com/uc?export=download&id=1Qz5O-x1GxzJIshYtpH6_CigqFwqD_qf2",
       Linux : "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=alnv7ot1r5yz86vh7e7hyj6vovngdgm8&file_id=f_917421063512"};
 
 if (navigator.appVersion.indexOf("Mac") != -1) 
@@ -62,6 +62,6 @@ if (navigator.appVersion.indexOf("Win") != -1)
 if (navigator.appVersion.indexOf("Linux") != -1) 
     detectedOS = "Linux";
     
-document.getElementById("id01").innerHTML = "download Vroom for " + detectedOS + " (v1.4.0)"; 
+document.getElementById("id01").innerHTML = "download Vroom for " + detectedOS + " (v1.4.1)"; 
 document.getElementById("id01").href = vroomDict[detectedOS]; 
 </script>
