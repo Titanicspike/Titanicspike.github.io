@@ -1,1 +1,21 @@
-Vroom
+<a id = "id01">Download Vroom</a>
+
+<script>
+  console.log(document.referrer);
+  var detectedOS = "Unknown OS";
+  var vroomDict = {
+      Windows : "https://drive.google.com/uc?export=download&id=1DeA8UbXLFemyn6Sb6aqxGsdhN33_M3jR",
+      MacOS : "https://drive.google.com/uc?export=download&id=1Qz5O-x1GxzJIshYtpH6_CigqFwqD_qf2",
+      Linux : "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=alnv7ot1r5yz86vh7e7hyj6vovngdgm8&file_id=f_917421063512"};
+
+if (navigator.appVersion.indexOf("Mac") != -1) 
+    detectedOS = "MacOS";
+
+if (navigator.appVersion.indexOf("Win") != -1) 
+    detectedOS = "Windows";
+if (navigator.appVersion.indexOf("Linux") != -1) 
+    detectedOS = "Linux";
+    
+document.getElementById("id01").innerHTML = "download Vroom for " + detectedOS + " (v1.4.1)"; 
+document.getElementById("id01").href = vroomDict[detectedOS]; 
+</script>
