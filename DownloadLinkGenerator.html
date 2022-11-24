@@ -1,0 +1,23 @@
+<a id = "download" href = "" download >download</a>
+
+
+<script>
+  
+
+
+        
+
+          
+  function go(){
+      var linkId = document.getElementById("input").value;
+      var idExtractor = /\/d\/(.+?)(?:\/|#|\?|$)/;
+      var result = idExtractor.exec(linkId);
+
+      document.getElementById("download").href = result;
+
+
+
+  }
+
+
+</script>
