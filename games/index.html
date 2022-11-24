@@ -13,27 +13,9 @@
 <a href="https://titanicspike.github.io"; class = "button">Home</a>
 <a href="https://titanicspike.github.io/games/Procrastination"; class = "button">Procrasination</a>
 <!-- <a href="https://play.unity.com/mg/other/webgl-builds-125058"; class = "button" target="_blank" rel="noopener noreferrer">Vroom</a> -->
-<a id = "id01" href = "https://github.com/Titanicspike/Titanicspike.github.io/raw/main/Vroom/vroomInstaller (v1.3.6).exe" class = "button" download>download Vroom for windows(v1.3.6)</a>
+<a id = "id01" href = "https://titanicspike.github.io/games/Vroom/" class = "button" download>Vroom</a>
 <a href = "https://drive.google.com/uc?export=download&id=1rUgb1OcfE4ABajgXFNTc_CFRXl7P7mxp&confirm=t&uuid=f26fc483-c317-44e7-8398-45355397f88a" class = "button" download>download multiplayer Windows(v0.09)</a>
 <a href = "multiplayer test files/multiplayer test filesIntel 64-bit.app.zip" class = "button" download>download multiplayer for Mac(v0.04)</a>
 </body>
 </html>
-<script>
-  console.log(document.referrer);
-  var detectedOS = "Unknown OS";
-  var vroomDict = {
-      Windows : "https://drive.google.com/uc?export=download&id=1DeA8UbXLFemyn6Sb6aqxGsdhN33_M3jR",
-      MacOS : "https://drive.google.com/uc?export=download&id=1Qz5O-x1GxzJIshYtpH6_CigqFwqD_qf2",
-      Linux : "https://app.box.com/index.php?rm=box_download_shared_file&shared_name=alnv7ot1r5yz86vh7e7hyj6vovngdgm8&file_id=f_917421063512"};
 
-if (navigator.appVersion.indexOf("Mac") != -1) 
-    detectedOS = "MacOS";
-
-if (navigator.appVersion.indexOf("Win") != -1) 
-    detectedOS = "Windows";
-if (navigator.appVersion.indexOf("Linux") != -1) 
-    detectedOS = "Linux";
-    
-document.getElementById("id01").innerHTML = "download Vroom for " + detectedOS + " (v1.4.1)"; 
-document.getElementById("id01").href = vroomDict[detectedOS]; 
-</script>
