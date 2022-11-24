@@ -9,8 +9,8 @@
     <script async src="//static.getclicky.com/js"></script>
 
 </head>
-
-<a id = "id01" class = "button">Download Vroom</a>
+<a id = "id01" class = "button" href = "https://titanicspike.github.io/games/Vroom/Web/">Play Vroom On The Web</a>
+<a id = "id02" class = "button">Download Vroom</a>
 
 <script>
   console.log(document.referrer);
@@ -28,7 +28,7 @@ if (navigator.appVersion.indexOf("Win") != -1)
 if (navigator.appVersion.indexOf("Linux") != -1) 
     detectedOS = "Linux";
     
-document.getElementById("id01").innerHTML = "download Vroom for " + detectedOS + " (v1.4.1)"; 
-document.getElementById("id01").href = vroomDict[detectedOS]; 
+document.getElementById("id02").innerHTML = "download Vroom for " + detectedOS + " (v1.4.1)"; 
+document.getElementById("id02").href = vroomDict[detectedOS]; 
 </script>
 </html>
